@@ -28,11 +28,33 @@ body {
 
 }
 
-.sidebar--LEFT {
-    position: absolute;
-    left: 0;
+.sidebar--TOP {
     top: 0;
-    height: 100%;
-    border: 1px solid #6c757d;
-    width: 255px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #3AB0FF;
+    height: 33px;
+
+}
+.menu--title {
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.menu--item {
+    background: #3AB0FF;
+    letter-spacing: 0.3px;
+    padding: 0 24px;
+    vertical-align: middle;
+
+    &:hover {
+        background:rgba(2, 99, 163, 0.35);
+        cursor: pointer;
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    }
 }

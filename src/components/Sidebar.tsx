@@ -1,12 +1,27 @@
 import * as React from 'react';
+import { Navbar } from './Navbar';
+
+const items = [
+    {
+        title: "Home",
+        link: "/home"
+    },
+    {
+        title: "Store",
+        link: "/store"
+    },
+    {
+        title: "Gallery",
+        link: "/gallery"
+    }
+]
 
 export class SideBar extends React.Component <SideBarPropsType, {} > {
     public render(): JSX.Element {
         const { position, children } = this.props;
         return(
             <div className={`sidebar--${position}`}>
-                <h1>I am a sidebar</h1>
-                {children}
+                <Navbar items={items}  />
             </div>
         )
     }
@@ -14,5 +29,4 @@ export class SideBar extends React.Component <SideBarPropsType, {} > {
 
 interface SideBarPropsType {
     position: string;
-    children: JSX.Element
 }

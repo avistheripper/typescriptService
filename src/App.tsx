@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Button } from './components/Button';
 import { SideBar } from './components/Sidebar';
+import { Form } from './components/form/Form';
 
 
 export class App extends React.Component<{} , StateTypes> {
@@ -11,13 +12,9 @@ export class App extends React.Component<{} , StateTypes> {
     public render(): JSX.Element {
         return (
         <div>
-            <SideBar position="LEFT">
-                <Button
-                    text="Grey Button"
-                    color="grey"
-                    size="SMALL"
-                />
-            </SideBar>
+            <SideBar position="TOP" />
+            <Form />
+
         </div>
         );
     }
