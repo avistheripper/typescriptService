@@ -3,20 +3,20 @@ import { Navbar } from './Navbar';
 
 const items = [
     {
-        title: "Home",
+        title: "Vote",
         link: "/home"
     },
     {
-        title: "Store",
+        title: "Statistic",
         link: "/store"
     },
     {
-        title: "Gallery",
+        title: "Results",
         link: "/gallery"
     }
 ]
 
-export class SideBar extends React.Component <SideBarPropsType, {} > {
+export class NavbarContainer extends React.Component <SideBarPropsType, {} > {
     public render(): JSX.Element {
         const { position, children } = this.props;
         return(
